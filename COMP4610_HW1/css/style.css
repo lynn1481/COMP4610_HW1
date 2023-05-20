@@ -81,4 +81,6 @@ tfoot, thead tr:nth-child(odd), tbody tr:nth-child(even){
     text-indent: 2em;
     text-align: justify;
     display:inline-block;
+    padding-top: 0.5em;
+    padding-bottom: 1em;
 }
