@@ -54,7 +54,7 @@ body{
     color:black;
     text-align: center;
     margin: 25px auto;
-    font-size: o.9em;
+    font-size: 0.9em;
     min-width: 400px;
     max-width: 900px;
 }
@@ -69,11 +69,7 @@ tfoot, thead tr:nth-child(odd), tbody tr:nth-child(even){
     background-color: rgb(223, 223, 244);
 }
 
-.none{
-    list-style-type: none;
-}
-
-.none div{
+.text{
     font-size: 16px;
     color: black;
     font-weight: normal;
