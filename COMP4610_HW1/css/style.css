@@ -68,3 +68,17 @@ body{
 tfoot, thead tr:nth-child(odd), tbody tr:nth-child(even){
     background-color: rgb(223, 223, 244);
 }
+
+.none{
+    list-style-type: none;
+}
+
+.none div{
+    font-size: 16px;
+    color: black;
+    font-weight: normal;
+    line-height: 1.6em;
+    text-indent: 2em;
+    text-align: justify;
+    display:inline-block;
+}
