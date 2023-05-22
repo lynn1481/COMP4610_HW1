@@ -8,15 +8,16 @@ body{
 
 div.content{
     position: absolute;
-    right: 5px;
-    left: 300px;
-    width: 80%;
+    left: 365px;
+    width: 75%;
     padding-bottom: 50px;
+    
 }
 
 .box1{
     width: 80%;
     margin: auto;
+    margin-right: 8%;
 }
 
 .box1 h1{
@@ -30,6 +31,7 @@ div.content{
 .box2{
     width: 80%;
     margin: auto;
+    margin-right: 5%;
 
     border: 5px lightskyblue solid;
     border-width: 5px;
@@ -91,15 +93,21 @@ tfoot, thead tr:nth-child(odd), tbody tr:nth-child(even){
 
 .sidenav img{
     height: 100%;
-    width: 400px;
+    width: 450px;
     position: fixed; 
     z-index: 1; 
     top: 0;
     left: -50px;
 }
 
-.validation{
+.validation1{
     position: absolute;
-    bottom: -950px;
-    right: 0;
+    bottom: 0;
+    left: 75%;
+}
+
+.validation2{
+    position: absolute;
+    bottom: 0;
+    left: 85%;
 }
