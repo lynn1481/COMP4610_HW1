@@ -104,7 +104,6 @@ tfoot, thead tr:nth-child(odd), tbody tr:nth-child(even){
     position: absolute;
     bottom: 0;
     left: 75%;
-    right: 0;
 }
 
 .validation2{
