@@ -100,7 +100,6 @@ tfoot, thead tr:nth-child(odd), tbody tr:nth-child(even){
 
 .validation{
     position: absolute;
-    justify-content: space-between;
     bottom: -950px;
     right: 0;
 }
