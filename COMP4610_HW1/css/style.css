@@ -14,13 +14,13 @@ div.content{
     
 }
 
-.box1{
+.head-box{
     width: 80%;
     margin: auto;
     margin-right: 8%;
 }
 
-.box1 h1{
+.head-box h1{
     color:rgb(0, 65, 105);
     text-align: center;
     font-style: italic;
@@ -28,7 +28,7 @@ div.content{
     font-weight: 500;
 }
 
-.box2{
+.body-box{
     width: 80%;
     margin: auto;
     margin-right: 5%;
@@ -41,7 +41,7 @@ div.content{
     padding-right: 40px;
 }
 
-.box2 ol li{
+.body-box ol li{
     text-indent: 0.2em;
     font-weight: bold;
     font-size: 16.5px;
@@ -100,14 +100,21 @@ tfoot, thead tr:nth-child(odd), tbody tr:nth-child(even){
     left: -50px;
 }
 
+.foot-box{
+    width: 80%;
+    margin-left: 150px;
+    position: absolute;
+    text-align: center;
+}
+
 .validation1{
     position: absolute;
     bottom: 0;
-    left: 75%;
+    left: 76%;
 }
 
 .validation2{
     position: absolute;
     bottom: 0;
-    left: 85%;
+    left: 88%;
 }
