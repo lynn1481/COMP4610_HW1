@@ -1,0 +1,102 @@
+/* 
+  File: style.css 
+  GUI Assignment3: Creating an Interactive Dynamic Table
+  Brief Overview: 
+    This assignment is to create and show a multiplication table, and handle invalid inputs appropriately. 
+    The user can via HTML fieldset to enter the values of multiplier and multiplicand. 
+    Use javascript to check the input values, then create the table with the products. 
+    Use CSS to style the page. 
+  
+  Judy Huang, UMass Lowell Computer Science, ChiungHui_Huang@student.uml.edu 
+  Copyright (c) 2023 by Judy.  All rights reserved.  May be freely copied or excerpted for educational purposes with credit to the author. 
+  Created by JH on June 01, 2023 at 08:29 PM , Updated by JH on June 8, 2023 at 08:36 PM 
+
+  ##Sources of Help: 
+  (1) W3Schools 
+  (2) side by side fieldsets: https://stackoverflow.com/questions/22868968/getting-2-fieldsets-adjacent-side-by-side-next-to-each-other
+*/
+
+body {
+    background-color: rgb(242, 227, 245);
+    text-align: center;
+}
+
+h2{
+    color:rgb(43, 43, 68);
+    font-style: italic;
+    font-weight: bold;
+}
+
+fieldset {
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color:rgb(237, 197, 245);
+    display: inline-block;
+    width: 35%;
+    margin: 10px;
+    margin-bottom: 20px;
+}
+
+legend {
+    background-color: rgb(101, 63, 108);
+    color: white;
+    padding: 10px 15px;
+}
+
+#Error {
+    margin-bottom: 25px;
+}
+
+#Error p {
+    display: inline-block;
+    width: 75%;
+    margin: 0px;
+    padding: 5px 0px;
+    background-color: rgb(225, 203, 230);
+    outline: 2px dashed rgb(43, 43, 68);
+    color:red;
+}
+  
+input {
+    margin: 15px;
+}
+
+button {
+    margin-bottom: 20px;
+    padding: 10px 20px;
+    border: 0;
+    border-radius: 5px;
+    background-color: rgb(89, 51, 97);
+    color:  rgb(225, 203, 230);
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 16px;
+}
+
+button:hover {
+    color:cornflowerblue;
+}
+
+#tableHolder {
+    max-height: 350px;
+    overflow: auto;
+    text-align: center;
+    margin: auto;
+    width: 75%;
+}
+
+#tableHolder th {
+    background-color: rgb(206, 206, 237);
+    padding: 0.9em;
+}
+
+th, tr, td {
+    padding: 0.7em;
+}
+
+#tableHolder tr:nth-child(1) th:nth-child(1){
+    background-color: rgb(242, 227, 245);
+}
+
+#tableHolder tr:nth-child(odd) td:nth-child(even), 
+#tableHolder tr:nth-child(even) td:nth-child(odd) {
+    background-color: rgb(238, 209, 214);
+}

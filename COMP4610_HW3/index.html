@@ -1,0 +1,58 @@
+<!--
+  File: index.html 
+  GUI Assignment3: Creating an Interactive Dynamic Table
+  Brief Overview: 
+    This assignment is to create and show a multiplication table, and handle invalid inputs appropriately. 
+    The user can via HTML fieldset to enter the values of multiplier and multiplicand. 
+    Use javascript to check the input values, then create the table with the products. 
+    Use CSS to style the page. 
+  
+  Judy Huang, UMass Lowell Computer Science, ChiungHui_Huang@student.uml.edu 
+  Copyright (c) 2023 by Judy.  All rights reserved.  May be freely copied or excerpted for educational purposes with credit to the author. 
+  Created by JH on June 01, 2023 at 08:29 PM , Updated by JH on June 8, 2023 at 07:54 PM 
+
+  ##Sources of Help: W3Schools 
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Interactive Dynamic Table</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <script src="js/script.js"></script>        
+</head>
+<body>
+    <h2>Interactive Dynamic Table</h1>
+    
+    <!-- The field for inputting the range of Multiplier -->
+    <fieldset>
+        <legend>Please enter the the range of Multiplier (horizontal)</legend>
+        <label for="minCol">Minimum Column Value</label>
+        <input type="text" id="minCol" name="minCol"><br>
+        <label for="maxCol">Maximum Column Value</label>
+        <input type="text" id="maxCol" name="maxCol"><br>
+    </fieldset>
+
+    <!-- The field for inputting the range of Multiplicand -->
+    <fieldset>
+        <legend>Please enter the the range of Multiplicand (vertical)</legend>
+        <label for="minRow">Minimum Row Value</label>
+        <input type="text" id="minRow" name="minRow"><br>
+        <label for="maxRow">Maximum Row Value</label>
+        <input type="text" id="maxRow" name="maxRow"><br>
+    </fieldset>
+
+     <!--Call onClickCreateTable() function when button clicked-->
+    <br><button type="button" onclick="onClickCreateTable()">Create Table</button>
+
+    <div id="Error">
+        <!-- The place where the error message is displayed -->
+    </div>
+
+    <div id="tableHolder">
+        <!-- The place where the final table is displayed -->
+    </div>
+
+</body>
+</html>
