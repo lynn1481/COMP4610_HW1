@@ -9,7 +9,7 @@
   
   Judy Huang, UMass Lowell Computer Science, ChiungHui_Huang@student.uml.edu 
   Copyright (c) 2023 by Judy.  All rights reserved.  May be freely copied or excerpted for educational purposes with credit to the author. 
-  Created by JH on June 01, 2023 at 08:29 PM , Updated by JH on June 8, 2023 at 05:38 PM 
+  Created by JH on June 01, 2023 at 08:29 PM , Updated by JH on June 12, 2023 at 09:39 PM 
 
   ##Sources of Help: 
     (1) W3Schools 
@@ -82,10 +82,10 @@ function onClickCreateTable() {
             alert += "<p>Max Row Value must be >= Min Row Value!</p>"; noError = false;
         }
         if(Math.abs(colEnd-colBegin) > 200){
-            alert += "<p>Range of Multiplier (Column) is too large!</p>"; noError = false;
+            alert += "<p>Range of Column (Multiplier) can't exceed 200!</p>"; noError = false;
         }
         if(Math.abs(rowEnd-rowBegin) > 200){
-            alert += "<p>Range of Multiplicand (Row) is too large!</p>"; noError = false;
+            alert += "<p>Range of Row (Multiplicand) can't exceed 200!</p>"; noError = false;
         }
     }
     else {

@@ -9,24 +9,27 @@
   
   Judy Huang, UMass Lowell Computer Science, ChiungHui_Huang@student.uml.edu 
   Copyright (c) 2023 by Judy.  All rights reserved.  May be freely copied or excerpted for educational purposes with credit to the author. 
-  Created by JH on June 01, 2023 at 08:29 PM , Updated by JH on June 8, 2023 at 08:36 PM 
+  Created by JH on June 01, 2023 at 08:29 PM , Updated by JH on June 12, 2023 at 09:56 PM 
 
   ##Sources of Help: 
   (1) W3Schools 
   (2) side by side fieldsets: https://stackoverflow.com/questions/22868968/getting-2-fieldsets-adjacent-side-by-side-next-to-each-other
 */
 
+/* Set up the background color of the web page */
 body {
     background-color: rgb(242, 227, 245);
     text-align: center;
 }
 
+/* Change the color and font style of the header */
 h2{
     color:rgb(43, 43, 68);
     font-style: italic;
     font-weight: bold;
 }
 
+/* Styling the fields where the user enters four input values */
 fieldset {
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     background-color:rgb(237, 197, 245);
@@ -42,6 +45,11 @@ legend {
     padding: 10px 15px;
 }
 
+input {
+    margin: 15px;
+}
+
+/* Styling the place that displays the warning message */
 #Error {
     margin-bottom: 25px;
 }
@@ -55,11 +63,8 @@ legend {
     outline: 2px dashed rgb(43, 43, 68);
     color:red;
 }
-  
-input {
-    margin: 15px;
-}
 
+/* Set up the style of the submit button */
 button {
     margin-bottom: 20px;
     padding: 10px 20px;
@@ -75,6 +80,7 @@ button:hover {
     color:cornflowerblue;
 }
 
+/* Set up the style of the multiplication table */
 #tableHolder {
     max-height: 350px;
     overflow: auto;
