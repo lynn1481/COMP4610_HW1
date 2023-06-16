@@ -1,0 +1,107 @@
+/* 
+  File: style.css 
+  GUI Assignment4 Part1: Validation Plugin
+  Brief Overview: 
+    Using the jQuery Validation plugin to check all inputs and display appropriate error messages. 
+    When the user changes the form data and passes form validation, generate or update the table immediately.
+  
+  Judy Huang, UMass Lowell Computer Science, ChiungHui_Huang@student.uml.edu 
+  Copyright (c) 2023 by Judy.  All rights reserved.  May be freely copied or excerpted for educational purposes with credit to the author. 
+  Created by JH on June 15, 2023 at 05:57 PM , Updated by JH on June 16, 2023 at 04:06 PM 
+
+  ##Sources of Help: W3Schools 
+*/
+
+/* Styling the jQuery error messages */
+.error {
+    color: red;
+}
+
+/* Set up the background color of the web page */
+body {
+    background-color: rgb(242, 227, 245);
+    text-align: center;
+    font-size: large;
+}
+
+/* Change the color and font style of the header */
+h2{
+    color:rgb(43, 43, 68);
+    font-style: italic;
+    font-weight: bold;
+}
+
+/* Styling the fields where the user enters four input values */
+fieldset {
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color:rgb(237, 197, 245);
+    display: inline-block;
+    width: 60%;
+    margin: auto;
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+legend {
+    background-color: rgb(101, 63, 108);
+    color: white;
+    padding: 10px 15px;
+}
+
+label {
+    margin-left: 25px;
+}
+
+input {
+    margin: 15px;
+    width: 10%;
+    font-size: large;
+    font-weight:bold;
+    text-align: center;
+}
+
+/* Set up the style of the submit button */
+button {
+    margin-top: -15px;
+    padding: 10px 20px;
+    border: 0;
+    border-radius: 5px;
+    background-color: rgb(89, 51, 97);
+    color:  rgb(225, 203, 230);
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 16px;
+    position: absolute;
+    right: 20%;
+}
+
+button:hover {
+    color:cornflowerblue;
+}
+
+/* Set up the style of the multiplication table */
+#tableHolder {
+    max-height: 500px;
+    overflow: auto;
+    text-align: center;
+    margin: auto;
+    margin-top: 50px;
+    width: 75%;
+}
+
+#tableHolder th {
+    background-color: rgb(206, 206, 237);
+    padding: 0.9em;
+}
+
+th, tr, td {
+    padding: 0.7em;
+}
+
+#tableHolder tr:nth-child(1) th:nth-child(1){
+    background-color: rgb(242, 227, 245);
+}
+
+#tableHolder tr:nth-child(odd) td:nth-child(even), 
+#tableHolder tr:nth-child(even) td:nth-child(odd) {
+    background-color: rgb(238, 209, 214);
+}

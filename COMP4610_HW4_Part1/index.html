@@ -1,0 +1,59 @@
+<!--
+  File: index.html 
+  GUI Assignment4 Part1: Validation Plugin
+  Brief Overview: 
+    Using the jQuery Validation plugin to check all inputs and display appropriate error messages. 
+    When the user changes the form data and passes form validation, generate or update the table immediately.
+  
+  Judy Huang, UMass Lowell Computer Science, ChiungHui_Huang@student.uml.edu 
+  Copyright (c) 2023 by Judy.  All rights reserved.  May be freely copied or excerpted for educational purposes with credit to the author. 
+  Created by JH on June 15, 2023 at 05:57 PM , Updated by JH on June 15, 2023 at 07:57 PM 
+
+  ##Sources of Help: W3Schools 
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Interactive Dynamic Table</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    
+    <!-- jQuery Plugins -->
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.5/dist/jquery.validate.js"></script>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.5/dist/additional-methods.js"></script> -->
+
+    <script src="js/script.js"></script>
+</head>
+<body>
+    <h2>Interactive Dynamic Table</h1>
+    
+    <form id="multForm">
+    <!-- The field for inputting the range of Multiplier -->
+        <fieldset>
+            <legend>Please enter the the range of Multiplier (horizontal)</legend>
+            <label for="minCol">Minimum Column Value</label>
+            <input type="text" id="minCol" name="minCol" value="0"><br>
+            <label for="maxCol">Maximum Column Value</label>
+            <input type="text" id="maxCol" name="maxCol" value="0"><br>
+        </fieldset>
+
+        <!-- The field for inputting the range of Multiplicand -->
+        <fieldset>
+            <legend>Please enter the the range of Multiplicand (vertical)</legend>
+            <label for="minRow">Minimum Row Value</label>
+            <input type="text" id="minRow" name="minRow" value="0"><br>
+            <label for="maxRow">Maximum Row Value</label>
+            <input type="text" id="maxRow" name="maxRow" value="0"><br>
+        </fieldset>
+    </form>
+
+     <!--Call onClickCreateTable() function when button clicked-->
+    <br><button type="button" onclick="onClickCreateTable()">Create Table</button>
+
+    <div id="tableHolder">
+        <!-- The place where the final table is displayed -->
+    </div>
+</body>
+</html>
