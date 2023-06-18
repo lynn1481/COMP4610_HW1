@@ -1,0 +1,76 @@
+<!--
+  File: index.html 
+  GUI Assignment4 Part2: jQuery UI Slider and Tab Widgets
+  Brief Overview: 
+    Add slider and tab widgets by using components in the jQuery UI library. Two-way binding between each input field and each slider. 
+    Users can save tables and delete single or multiple tables.
+  
+  Judy Huang, UMass Lowell Computer Science, ChiungHui_Huang@student.uml.edu 
+  Copyright (c) 2023 by Judy.  All rights reserved.  May be freely copied or excerpted for educational purposes with credit to the author. 
+  Created by JH on June 16, 2023 at 09:16 PM , Updated by JH on June 16, 2023 at 08:30 PM 
+
+  ##Sources of Help: W3Schools 
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Interactive Dynamic Table</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.13.2/themes/smoothness/jquery-ui.css">
+    
+    <!-- jQuery Plugins -->
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.5/dist/jquery.validate.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+
+    <script src="js/script.js"></script>
+</head>
+<body>
+    <h2>Interactive Dynamic Table</h2>
+    
+    <form id="multForm">
+    <!-- The field for inputting the range of Multiplier -->
+        <fieldset>
+            <legend>Please enter the the range of Multiplier (horizontal)</legend>
+            <label for="minCol">Minimum Column Value</label>
+            <input type="text" id="minCol" name="minCol" value="0"><br>
+            <div id="minColSlider"></div>
+            <label for="maxCol">Maximum Column Value</label>
+            <input type="text" id="maxCol" name="maxCol" value="0"><br>
+            <div id="maxColSlider"></div>
+        </fieldset>
+
+        <!-- The field for inputting the range of Multiplicand -->
+        <fieldset>
+            <legend>Please enter the the range of Multiplicand (vertical)</legend>
+            <label for="minRow">Minimum Row Value</label>
+            <input type="text" id="minRow" name="minRow" value="0"><br>
+            <div id="minRowSlider"></div>
+            <label for="maxRow">Maximum Row Value</label>
+            <input type="text" id="maxRow" name="maxRow" value="0"><br>
+            <div id="maxRowSlider"></div>
+        </fieldset>
+    </form>
+
+    <br><button id="saveTableButton" type="button">Save Table</button>
+
+    <h3>Multiplication Table</h3>
+    <div id="multTable">
+            <!-- Display the multiplication table -->
+    </div>
+
+    <h3> Saved Tables </h3>
+    <button id="deleteTableButton" type="button">Delete Selected Table</button><br><br>
+
+    <!-- Tabs for saving table -->
+    <div id="savedTabs">
+        <ul>
+            <!-- append tabs -->
+        </ul>
+            <!-- append contents -->
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,156 @@
+/* 
+  File: style.css 
+  GUI Assignment4 Part2: jQuery UI Slider and Tab Widgets
+  Brief Overview: 
+    Add slider and tab widgets by using components in the jQuery UI library. Two-way binding between each input field and each slider. 
+    Users can save tables and delete single or multiple tables.
+  
+  Judy Huang, UMass Lowell Computer Science, ChiungHui_Huang@student.uml.edu 
+  Copyright (c) 2023 by Judy.  All rights reserved.  May be freely copied or excerpted for educational purposes with credit to the author. 
+  Created by JH on June 16, 2023 at 09:16 PM , Updated by JH on June 18, 2023 at 04:38 PM 
+
+  ##Sources of Help: W3Schools 
+*/
+
+h3{
+    margin-top: 50px;
+}
+
+/* Styling the jQuery error messages */
+.error {
+    color: red;
+}
+
+/* Set the width of sliders */
+#minColSlider, #maxColSlider, #minRowSlider, #maxRowSlider{
+    width: 35%;
+    margin: 10px;
+    margin-left: 25px;
+}
+
+/* Set up the style of the place for saving tables */
+#savedTabs{
+    height: 500px;
+    margin: auto;
+    margin-bottom: 30px;
+    width: 80%;
+    overflow: auto;
+    border: 1px solid black;
+}
+
+#savedTabs li{
+    display: inline;
+}
+
+#savedTabs table {
+    font-family: 'Times New Roman', Times, serif;
+    max-height: 500px;
+}
+
+/* Adjust the position of the Delete Selected Table Button */
+#deleteTableButton{
+    position: absolute;
+    right: 10%;
+}
+
+/* Adjust the position of the checkbox */
+.checkbox{
+    display: block;
+    margin: 0;
+    position: absolute;
+    bottom: 8px;
+    left: 90%;
+}
+
+/* Set up the background color of the web page */
+body {
+    background-color: rgb(242, 227, 245);
+    text-align: center;
+    font-size: large;
+}
+
+/* Change the color and font style of the header */
+h2{
+    color:rgb(43, 43, 68);
+    font-style: italic;
+    font-weight: bold;
+}
+
+/* Styling the fields where the user enters four input values */
+fieldset {
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color:rgb(237, 197, 245);
+    display: inline-block;
+    width: 60%;
+    margin: auto;
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+legend {
+    background-color: rgb(101, 63, 108);
+    color: white;
+    padding: 10px 15px;
+}
+
+label {
+    margin-left: 25px;
+}
+
+input {
+    margin: 15px;
+    width: 10%;
+    font-size: large;
+    font-weight:bold;
+    text-align: center;
+}
+
+/* Set up the style of the submit button */
+button {
+    margin-top: -15px;
+    padding: 10px 20px;
+    border: 0;
+    border-radius: 5px;
+    background-color: rgb(89, 51, 97);
+    color:  rgb(225, 203, 230);
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 16px;
+    position: absolute;
+    right: 20%;
+}
+
+button:hover {
+    color:cornflowerblue;
+}
+
+/* Set up the style of the multiplication table and saved tables */
+#multTable{
+    width: 80%;
+    height: 500px;
+    margin: auto;
+    overflow: auto;
+    border: 1px solid black;
+}
+
+#multTable th, #savedTabs table th {
+    background-color: rgb(206, 206, 237);
+    padding: 0.9em;
+}
+
+tr, td {
+    padding: 0.7em;
+}
+
+#multTable tr:nth-child(1) th:nth-child(1), 
+#savedTabs table tr:nth-child(1) th:nth-child(1),
+#savedTabs table tr:nth-child(odd) td:nth-child(odd),
+#savedTabs table tr:nth-child(even) td:nth-child(even) {
+    background-color: rgb(242, 227, 245);
+}
+
+#multTable tr:nth-child(odd) td:nth-child(even), 
+#multTable tr:nth-child(even) td:nth-child(odd),
+#savedTabs table tr:nth-child(odd) td:nth-child(even),
+#savedTabs table tr:nth-child(even) td:nth-child(odd) {
+    background-color: rgb(238, 209, 214);
+}
