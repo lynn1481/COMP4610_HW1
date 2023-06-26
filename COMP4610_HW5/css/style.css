@@ -1,0 +1,113 @@
+/* 
+  File: style.css 
+  GUI Assignment5: Implementing a Bit of Scrabble with Drag-and-Drop
+  Brief Overview:
+    Implement one-line Scrabble game using JQuery UI. Users can get scores by dragging 7 hand tiles from the rack to
+    the board containing the bonus squares. Also, users can restart the game or choose to proceed to the next round until all tiles
+    have been used.
+  
+  Judy Huang, UMass Lowell Computer Science, ChiungHui_Huang@student.uml.edu 
+  Copyright (c) 2023 by Judy.  All rights reserved.  May be freely copied or excerpted for educational purposes with credit to the author. 
+  Created by JH on June 22, 2023 at 04:08 PM , Updated by JH on June 24, 2023 at 11:55 PM 
+
+  ##Sources of Help: W3Schools 
+*/
+
+body {
+    background-color:beige;
+    text-align: center;
+    margin: 0;
+}
+
+#header {
+    padding: 60px;
+    background: rgb(255, 215, 116);
+    height: 50px;
+}
+
+h1 {
+    margin-top: -5px;
+    font-size: 40px;
+    color: saddlebrown;
+}
+
+/* Display the target board image */
+#targetBoard {
+    min-width: 1410px;
+    height: 105px;
+    background-image: url("../images/Scrabble_Board_OneLine.png");
+    background-repeat: no-repeat;
+    background-size: 1410px 105px;
+    background-position: center;
+    margin-top: 30px;
+    padding-right: 6px;
+}
+
+/* Styling the rack holding the player's 7 hands of tiles */
+#tileRack {
+    min-width: 650px;
+    height: 100px;
+    background-image: url("../images/scrabble-tile-holder-406774_640.png");
+    background-repeat: no-repeat;
+    background-size: 650px 100px;
+    background-position: center top;
+    background-position-x: 49%;
+    margin-top: 20px;
+    margin-left: -20px;
+}
+
+/* Fix the position and size of tiles' image display */
+.targets img, .tiles img {
+    width: 75px;
+    height: 75px;
+}
+
+.targets {
+    width: 85px;
+    height: 85px;
+    display: inline-block;
+    margin: 2.3px;
+    padding: 0;
+}
+
+.tiles {
+    width: 75px;
+    height: 75px;
+    display: inline-block;
+    margin: 1.5px;
+    margin-top: 3.5px;
+    padding: 0;
+}
+
+/* Styling the scoreboard */
+#scoreBoard {
+    border: 3px dotted saddlebrown;
+    border-radius: 10px;
+    background-color: rgb(255, 202, 68);
+    color: saddlebrown;
+    font-size: 22px;
+    font-weight: bold;
+    width: 40%;
+    margin:auto;
+    margin-top: 30px;
+}
+
+/* Align the text of the scoreboard to the left */
+#scoreBoard p {
+    text-align: left;
+    padding-left: 10%;
+}
+
+/* Buttons Style */
+#nextRound, #restartGame {
+    display: inline;
+    margin-top: 20px;
+    margin-left: 13%;
+    margin-right: 13%;
+    padding: 15px;
+    background-color: rgb(139, 91, 57);
+    color:rgb(255, 202, 68);
+    border: 0;
+    border-radius: 5px;
+}
+

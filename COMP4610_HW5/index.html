@@ -1,0 +1,79 @@
+<!--
+  File: index.html 
+  GUI Assignment5: Implementing a Bit of Scrabble with Drag-and-Drop
+  Brief Overview:
+    Implement one-line Scrabble game using JQuery UI. Users can get scores by dragging 7 hand tiles from the rack to
+    the board containing the bonus squares. Also, users can restart the game or choose to proceed to the next round until all tiles
+    have been used.
+
+  Judy Huang, UMass Lowell Computer Science, ChiungHui_Huang@student.uml.edu 
+  Copyright (c) 2023 by Judy.  All rights reserved.  May be freely copied or excerpted for educational purposes with credit to the author. 
+  Created by JH on June 22, 2023 at 04:08 PM , Updated by JH on June 24, 2023 at 05:53 PM 
+
+  ##Sources of Help: W3Schools 
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Scrabble</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.13.2/themes/smoothness/jquery-ui.css">
+    
+    <!-- jQuery Plugins -->
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.5/dist/jquery.validate.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+
+</head>
+<body>
+    <div id="header">
+        <h1>Scrabble</h1>
+    </div>
+
+    <!-- 15 target squares for user to place tiles -->
+    <div id="targetBoard">
+        <div class="targets" id="t0"></div>
+        <div class="targets" id="t1"></div>
+        <div class="targets" id="t2"></div>
+        <div class="targets" id="t3"></div>
+        <div class="targets" id="t4"></div>
+        <div class="targets" id="t5"></div>
+        <div class="targets" id="t6"></div>
+        <div class="targets" id="t7"></div>
+        <div class="targets" id="t8"></div>
+        <div class="targets" id="t9"></div>
+        <div class="targets" id="t10"></div>
+        <div class="targets" id="t11"></div>
+        <div class="targets" id="t12"></div>
+        <div class="targets" id="t13"></div>
+        <div class="targets" id="t14"></div>
+    </div>
+
+    <!-- For displaying the words on the target board and the scores -->
+    <div id="scoreBoard">
+        <p id="word">Word: </p>
+        <p id="roundScore">Round Score: 0</p>
+        <p id="totalScore">Total Score: 0</p>
+    </div>
+
+    <!-- Buttons -->
+    <button id="nextRound" type="button">Next Round</button>
+    <button id="restartGame" type="button">Restart Game</button>
+    
+    <!-- For holding the image of the player's 7 hand tiles -->
+    <div id="tileRack">
+        <div class="tiles" id="s0"></div>
+        <div class="tiles" id="s1"></div>
+        <div class="tiles" id="s2"></div>
+        <div class="tiles" id="s3"></div>
+        <div class="tiles" id="s4"></div>
+        <div class="tiles" id="s5"></div>
+        <div class="tiles" id="s6"></div>
+    </div>
+
+    <script src="js/script.js"></script>
+
+</body>
+</html>
